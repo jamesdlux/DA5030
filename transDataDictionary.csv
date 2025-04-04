@@ -1,0 +1,39 @@
+Field Name,Data Type,Description
+masterCustomerId,integer,Unique master customer ID (deduplicated)
+customerType,character,"Customer classification type (e.g., Recreational)"
+transYear,integer,The Year associated with the Customer Record
+transQuarter,integer,The Quarter associated with the Customer Record
+gender,character,"Standardized gender (Female, Male, NonBinary, Other)"
+age,integer,Age of the customer (calculated from date of birth)
+quarter,character,"Year and quarter in format Q#-YYYY (e.g., Q1-2024)"
+thisQOrderCount,integer,Total number of orders in this quarter
+thisQLastPurchaseDate,character,Most recent transaction date in this quarter
+thisQTotalNetSales,numeric,Total net sales for this quarter
+thisQTotalDiscount,numeric,Total discounts applied this quarter
+thisQTotalItems,integer,Total items purchased this quarter
+thisQTotalCashPaid,numeric,Total amount paid in cash this quarter
+thisQTotalDebitPaid,numeric,Total amount paid using debit this quarter
+thisQOnlineCount,integer,Count of online orders this quarter
+thisQKioskCount,integer,Count of kiosk orders this quarter
+thisQDeliveryCount,integer,Count of delivery orders this quarter
+lastQOrderCount,integer,Total number of orders in previous quarter
+lastQLastPurchaseDate,character,Most recent transaction date in previous quarter
+lastQTotalNetSales,numeric,Total net sales for last quarter
+lastQTotalDiscount,numeric,Total discounts applied last quarter
+lastQTotalItems,integer,Total items purchased last quarter
+lastQTotalCashPaid,numeric,Total amount paid in cash last quarter
+lastQDebitPaid,numeric,Total amount paid using debit last quarter
+lastQOnlineCount,integer,Count of online orders last quarter
+lastQKioskCount,integer,Count of kiosk orders last quarter
+lastQDeliveryCount,integer,Count of delivery orders last quarter
+deltaOrderCount,integer,Change in order count compared to previous quarter
+deltaNetSales,numeric,Change in net sales from last to this quarter
+deltaDiscount,numeric,Change in discounts from last to this quarter
+deltaItems,integer,Change in items purchased from last to this quarter
+deltaCashPaid,numeric,Change in cash paid from last to this quarter
+deltaDebitPaid,numeric,Change in debit paid from last to this quarter
+deltaOnlineCount,integer,Change in online order count from last to this quarter
+deltaKioskCount,integer,Change in kiosk order count from last to this quarter
+deltaDeliveryCount,integer,Change in delivery order count from last to this quarter
+daysSinceLastPurchase,integer,Days since most recent purchase in this quarter
+churn,integer,"Churn label (1 = churned, 0 = not churned based on next quarter activity)"
